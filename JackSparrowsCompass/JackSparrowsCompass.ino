@@ -62,6 +62,23 @@ const float Mag_z_scale = 1.2007211;
 // const float Mag_y_scale = 1.0941668;
 // const float Mag_z_scale = 0.893605;
 
+//const float
+//Mag_x_offset = 151.615,
+//Mag_y_offset = 98.395,
+//Mag_z_offset = -458.6,
+//Mag_x_scale = 1.2185702,
+//Mag_y_scale = 1.207344,
+//Mag_z_scale = 0.7401366;
+
+float
+Mag_x_offset = 292.65,
+Mag_y_offset = 7.024994,
+Mag_z_offset = -455.20502,
+Mag_x_scale = 0.8299109,
+Mag_y_scale = 0.8476526,
+Mag_z_scale = 1.625163;
+
+
 
 
 int32_t timestamp = 0;
@@ -159,10 +176,10 @@ void setup()
 	{
 		Serial.println("ERROR ON SERVER SETUP");
 	}
-	for(int i = 0; i < size_sample_filter; i++)
-	{
-		heading_filter[i] = 0;
-	}
+	// for(int i = 0; i < size_sample_filter; i++)
+	// {
+	// 	heading_filter[i] = 0;
+	// }
 
 	delay(500);
 }
@@ -177,16 +194,16 @@ void loop()
 		if(mpu.update(micros()-timestamp))
 		{
 			heading = (int) mpu.getHeading();
-			heading_filter[sample_counter] = heading;
-			sample_counter ++;
-			int sum = 0;
-			for(int i = 0; i < sample_counter; i++)
-			{
-				sum += heading_filter[i];
-			}
-			
-			heading = sum/sample_counter;
-			sample_counter = sample_counter%size_sample_filter;
+//			heading_filter[sample_counter] = heading;
+//			sample_counter ++;
+//			int sum = 0;
+//			for(int i = 0; i < sample_counter; i++)
+//			{
+//				sum += heading_filter[i];
+//			}
+//			
+//			heading = sum/sample_counter;
+//			sample_counter = sample_counter%size_sample_filter;
 		}
 
 		int targetHeading = 0;

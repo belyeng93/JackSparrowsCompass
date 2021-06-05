@@ -164,13 +164,22 @@ const int pin_BL = 10;
 //
 //
 
+//float
+//Mag_x_offset = 0.0,
+//Mag_y_offset = 0.0,
+//Mag_z_offset = 0.0,
+//Mag_x_scale = 1.0,
+//Mag_y_scale = 1.0,
+//Mag_z_scale = 1.0;
+
 float
-Mag_x_offset = 0.0,
-Mag_y_offset = 0.0,
-Mag_z_offset = 0.0,
-Mag_x_scale = 1.0,
-Mag_y_scale = 1.0,
-Mag_z_scale = 1.0;
+Mag_x_offset = 292.65,
+Mag_y_offset = 7.024994,
+Mag_z_offset = -455.20502,
+Mag_x_scale = 0.8299109,
+Mag_y_scale = 0.8476526,
+Mag_z_scale = 1.625163;
+
 
 
 
