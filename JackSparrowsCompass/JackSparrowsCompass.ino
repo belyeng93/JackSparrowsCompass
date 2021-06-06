@@ -47,38 +47,45 @@ int previousTargetHeading = 0;
 // const float Mag_y_scale = 0.97450244;
 // const float Mag_z_scale = 1.0081002;
 
-const float Mag_x_offset = 236.23502;
-const float Mag_y_offset = 267.08;
-const float Mag_z_offset = -383.865;
-const float Mag_x_scale = 0.8924237;
-const float Mag_y_scale = 0.9554539;
-const float Mag_z_scale = 1.2007211;
+// const float Mag_x_offset = 236.23502;
+// const float Mag_y_offset = 267.08;
+// const float Mag_z_offset = -383.865;
+// const float Mag_x_scale = 0.8924237;
+// const float Mag_y_scale = 0.9554539;
+// const float Mag_z_scale = 1.2007211;
 
 //Calib proto A 05/06/2021
-// const float Mag_x_offset = 169.245;
-// const float Mag_y_offset = -186.25002;
-// const float Mag_z_offset = -415.2000;
-// const float Mag_x_scale = 1.0341263;
-// const float Mag_y_scale = 1.0941668;
-// const float Mag_z_scale = 0.893605;
+// const float Mag_x_offset = 296.175;
+// const float Mag_y_offset = 7.029999;
+// const float Mag_z_offset = -428.03;
+// const float Mag_x_scale = 1.0535748;
+// const float Mag_y_scale = 1.0375158;
+// const float Mag_z_scale = 0.919955;
 
-//const float
-//Mag_x_offset = 151.615,
-//Mag_y_offset = 98.395,
-//Mag_z_offset = -458.6,
-//Mag_x_scale = 1.2185702,
-//Mag_y_scale = 1.207344,
-//Mag_z_scale = 0.7401366;
+//Calib proto A 05/06/2021 with gps
+// float
+// Mag_x_offset = 250.34,
+// Mag_y_offset = 66.770004,
+// Mag_z_offset = -447.73248,
+// Mag_x_scale = 1.0336264,
+// Mag_y_scale = 0.99900585,
+// Mag_z_scale = 0.96942705;
+
+// float
+// Mag_x_offset = 208.03,
+// Mag_y_offset = -122.99999,
+// Mag_z_offset = -722.55396,
+// Mag_x_scale = 1.137737,
+// Mag_y_scale = 1.0988564,
+// Mag_z_scale = 0.8257466;
 
 float
-Mag_x_offset = 292.65,
-Mag_y_offset = 7.024994,
-Mag_z_offset = -455.20502,
-Mag_x_scale = 0.8299109,
-Mag_y_scale = 0.8476526,
-Mag_z_scale = 1.625163;
-
-
+Mag_x_offset = 208.03,
+Mag_y_offset = -108.94,
+Mag_z_offset = -611.47,
+Mag_x_scale = 1.2461473,
+Mag_y_scale = 1.1814733,
+Mag_z_scale = 0.74012357;
 
 
 int32_t timestamp = 0;

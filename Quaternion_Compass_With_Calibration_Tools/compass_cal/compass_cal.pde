@@ -122,10 +122,18 @@ boolean debug = true;
 // ==========================
 // setup()
 // ==========================
+void settings() {
+  System.setProperty("jogl.disable.openglcore", "false");
+  size(600, 600, P3D);                            // P3D allows rotation about the Z axis
+}
 void setup()
 {
   // ----- define drawing area size
-  size(600, 600, P3D);                            // P3D allows rotation about the Z axis
+  PGraphicsOpenGL pg = (PGraphicsOpenGL)g;
+  println(PGraphicsOpenGL.OPENGL_VENDOR);
+  println(PGraphicsOpenGL.OPENGL_RENDERER);
+  println(PGraphicsOpenGL.OPENGL_VERSION);
+  println(PGraphicsOpenGL.GLSL_VERSION);
   background(0);                                  // initial background color
 
   // ----- create 10 data files in the sketch directory
@@ -142,7 +150,8 @@ void setup()
 
   // ----- configure the serial port
   printArray(Serial.list()); 
-  myPort = new Serial(this, Serial.list()[1], 115200);
+  //myPort = new Serial(this, Serial.lis t()[0], 115200);
+  myPort = new Serial(this, "/dev/ttyUSB0", 115200);
   myPort.bufferUntil('\n');                      // serialEvent() won't trigger until buffer has "\n"
   myPort.clear();
 }

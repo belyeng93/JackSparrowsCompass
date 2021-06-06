@@ -153,7 +153,7 @@ R"rawliteral(
             getSysStatus();
             target();
             actualpose();
-        }, 200); 
+        }, 500); 
         
         function getCompassStatus() 
         {
